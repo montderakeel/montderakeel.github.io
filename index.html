@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Muntadher Akeel, Full Stack Web Developer">
+    <meta name="image" content="https://muntax.com/imgs/profile.jpg">
+    <title>MUNTADHER AKEEL</title>
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+        
+      </div>
+    <main>
+        <header>
+            <nav>
+                <ul>
+                    <li class="active-link" id="home"><img src="icons/home.svg">Home Page</li>
+                    <li id="projects"><img src="icons/projects.svg">Projects</li>
+                    <li id="contact"><img src="icons/contact.svg">Contact Me</li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section class="home active">
+                <div class="contianer">
+                    <div class="image">
+                        <img src="imgs/profile.jpg" alt="Profile Image">
+                        <a href="cv.pdf" target="_blank">Download My CV</a>
+                    </div>
+                    <div class="content">
+                        <div class="heading">
+                            <h2>MUNTADHER AKEEL</h2>
+                            <p>Full Stack Web Developer</p>
+                        </div>
+                        <div class="description">
+                            <div class="about" id="about">
+                                
+                            </div>
+                            <div class="info">
+                                <h3>Language Skills</h3>
+                                <ul>
+                                    <li><div class="bar" data-fill="100">HTML <span></span></div></li>
+                                    <li><div class="bar" data-fill="85">CSS <span>85%</span></div></li>
+                                    <li><div class="bar" data-fill="60">JavaScript <span>60%</span></div></li>
+                                    <li><div class="bar" data-fill="80">PHP <span>80%</span></div></li>
+                                    <li><div class="bar" data-fill="75"">MYSQL <span>75%</span></div></li>
+                                    <li><div class="bar" data-fill="60"">SASS <span>60%</span></div></li>
+                                    <li><div class="bar" data-fill="70"">Laraval <span>70%</span></div></li>
+                                    <li><div class="bar" data-fill="50"">Wordpres <span>50%</span></div></li>
+                                    <li><div class="bar" data-fill="90"">Bootstrap <span>90%</span></div></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer>
+                            <div class="links">
+                                <a href="https://github.com/montderakeel" target="_blank"><img src="icons/github.svg" alt="icon github"/> Github</a>
+                                <a href="https://www.facebook.com/profile.php?id=100080987814120" target="_blank"><img src="icons/facebook.svg" alt="icon facebook"/> Facebook</a>
+                                <a href="https://www.instagram.com/montderxyz" target="_blank"><img src="icons/instagram.svg" alt="icon instagram"/> Instagram</a>
+                                <a href="https://twitter.com/montder007" target="_blank"><img src="icons/twitter.svg" alt="icon twitter"/> Twitter</a>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            <section class="projects">
+                <h2>My Latest Projects</h2>
+                <div class="boxs">
+                    <a  class="box" href="https://muntax.com/projects/template-1/" target="_blank">
+                        <img src="imgs/teample-1.jpg" alt="tempalte one">
+                        <div class="details">
+                            <h2>template 1</h2>
+                            <div class="description">Elegant, streamlined, with eye-friendly colors, it adapts to all screens.</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="cont">
+                    <div class="left">
+                        <form action="" method="POST">
+                            <h2>Get In Touch</h2>
+                            <div class="form-group">
+                                <input id="name" type="text" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input id="email" type="email" name="email" placeholder="E-Mail">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" rows="8" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right">
+                        <h2>Contact Us</h2>
+                        <ul>
+                            <li><i class='bx bx-map'></i> <span><strong>Address: </strong>New romatha, al-muthnaa, iraq</span></li>
+                            <li><i class='bx bxs-phone'></i> <span><strong>Phone: </strong>+964 7826340606</span></li>
+                            <li><i class='bx bxs-envelope'></i> <span><strong>E-Mail: </strong>info@muntax.com</span></li>
+                            <li><i class='bx bx-globe'></i> <span><strong>Website: </strong>muntax.com</span></li>
+                        </ul>
+                    </div>
+                </div>                
+            </section>
+        </div>
+    </main>
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="select.js"></script>
+</body>
+</html>
