@@ -12,29 +12,23 @@
   const SideNaveBtn = document.getElementById("sideNaveBtn"),
     SideNave = document.getElementById("sideNave");
 
-  // Initially hide the side navigation
-  SideNave.style.right = "-240px"; // Start off-screen
+  SideNave.style.right = "-300px";
 
   // Toggle button click
   SideNaveBtn.onclick = function (event) {
-    event.stopPropagation(); // Prevent the click from propagating to the document
-    if (SideNave.style.right === "-240px") {
-      // Show side navigation
+    event.stopPropagation(); 
+    if (SideNave.style.right === "-300px") {
       SideNave.style.right = "0px";
     } else {
-      // Hide side navigation
-      SideNave.style.right = "-240px";
+      SideNave.style.right = "-300px";
     }
   };
-
-  // Close side navigation when clicking outside
+  
   document.onclick = function () {
-    SideNave.style.right = "-240px"; // Hide the side navigation
+    SideNave.style.right = "-300px";
   };
-
-  // Prevent closing when clicking inside the side navigation
   SideNave.onclick = function (event) {
-    event.stopPropagation(); // Prevent the click from propagating to the document
+    event.stopPropagation();
   };
 
   AOS.init();
