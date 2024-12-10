@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ٱلتَّحالُفُ ٱلْوَطَنِيُّ لِلْمُعَارَضَةِ ٱلْعِرَاقِيَّةِ</title>
+    <title>Home Page</title>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,10 +19,19 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
+    <link rel="stylesheet" href="css/loading.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body class="leading-loose tracking-wide">
+    <!-- ====== Start Loading ====== -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+    <!-- ====== End Loading ====== -->
+
     <div class="container mx-auto">
       <!--======== Start Header Section ========-->
       <header class="bg-gradient-to-r from-sky-200 border border-sky-100 shadow-sm rounded-lg lg:mt-4">
@@ -32,7 +41,7 @@
               <img src="imgs/logo.png" />
             </div>
             <div class="text-center lg:text-start">
-              <div class="title text-2xl lg:text-5xl mb-2" data-aos="fade-down">
+              <div class="title text-2xl lg:text-5xl mb-2" data-aos="fade-down" data-aos-delay="2000">
                 ٱلتَّحالُفُ ٱلْوَطَنِيُّ لِلْمُعَارَضَةِ ٱلْعِرَاقِيَّةِ
               </div>
               <div class="font-medium text-gray-700 text-[10px] hidden md:block lg:text-lg alexandria">
@@ -45,17 +54,26 @@
           </div>
         </div>
         <nav class="px-2 lg:pr-6 py-2 border-t border-sky-200 flex justify-between">
-          <ul class="hidden lg:flex gap-4 links font-medium">
+          <ul class="hidden lg:flex gap-4 links font-medium" data-aos="fade-up" data-aos-delay="2000">
             <li><a href="#">الرئيسية</a></li>
             <li><a href="#">الأخبار</a></li>
             <li><a href="#">من نحن</a></li>
             <li><a href="#">تواصل معنا</a></li>
             <li><a href="#">استمارة الانضمام</a></li>
           </ul>
-          <button class="lg:hidden justify-start bg-sky-500 h-8 w-8 rounded text-white">
+          <button id="sideNaveBtn" class="lg:hidden justify-start bg-sky-500 h-8 w-8 rounded text-white">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <ul dir="ltr" class="flex lg:ml-8 gap-2" data-aos="fade-up">
+          <div id="sideNave" class="w-60 bg-gray-800 fixed top-0 right-0 h-full z-10 transition-all">
+            <ul class="text-white">
+              <li class="p-2 border-b border-gray-700"><a href="#">الرئيسية</a></li>
+              <li class="p-2 border-b border-gray-700"><a href="#">الأخبار</a></li>
+              <li class="p-2 border-b border-gray-700"><a href="#">من نحن</a></li>
+              <li class="p-2 border-b border-gray-700"><a href="#">تواصل معنا</a></li>
+              <li class="p-2"><a href="#">استمارة الانضمام</a></li>
+            </ul>
+          </div>
+          <ul dir="ltr" class="flex lg:ml-8 gap-2" data-aos="fade-up" data-aos-delay="2000">
             <li class="bg-white rounded-md border border-sky-200 transition-transform transform hover:-translate-y-1">
               <a class="block w-8 text-center" href="#"><i class="fa-lg fa-brands fa-x-twitter"></i></a>
             </li>
@@ -97,37 +115,55 @@
             </p>
           </div>
           <div class="px-8 pb-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-up">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-up"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">تعزيز الديمقراطية وحقوق الإنسان</h4>
               <p class="text-sm text-gray-700 leading-8">
                 ضمان حرية التعبير، التعددية السياسية، وتعزيز المشاركة الشعبية في اتخاذ القرارات.
               </p>
             </div>
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-down">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-down"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">تحقيق العدالة الاجتماعية</h4>
               <p class="text-sm text-gray-700 leading-8">
                 المساواة في الفرص بين جميع أفراد المجتمع، وتوفير خدمات تعليمية وصحية عالية الجودة.
               </p>
             </div>
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-up">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-up"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">دعم التنمية المستدامة</h4>
               <p class="text-sm text-gray-700 leading-8">
                 العمل على مشروعات تنموية تحقق التوازن بين التقدم الاقتصادي والحفاظ على البيئة.
               </p>
             </div>
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-down">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-down"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">تمكين الشباب والمرأة</h4>
               <p class="text-sm text-gray-700 leading-8">
                 تعزيز دور الشباب والمرأة في الحياة السياسية والاجتماعية، وتوفير الفرص الناجعة
               </p>
             </div>
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-up">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-up"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">مكافحة الفساد</h4>
               <p class="text-sm text-gray-700 leading-8">
                 تطبيق سياسات شفافة ومحاسبة فعالة للقضاء على الفساد وتعزيز الثقة بين المواطن ومؤسسات
               </p>
             </div>
-            <div class="border border-sky-200 shadow-md bg-white rounded-lg p-4" data-aos="fade-down">
+            <div
+              class="border border-sky-200 shadow-md bg-white rounded-lg p-4"
+              data-aos="fade-down"
+              data-aos-delay="2200">
               <h4 class="border-b border-sky-100 font-medium py-4 mb-4">تعزيز الهوية الوطنية</h4>
               <p class="text-sm text-gray-700 leading-8">
                 الحفاظ على وحدة الوطن واحترام التنوع الثقافي والديني، وتغليب مصلحة الوطن على الجميع
@@ -653,8 +689,10 @@
               NAIO
             </div>
           </div>
-          <div class="flex items-center gap-10">
-            <div class="border-l border-gray-300 pl-4 text-lg text-gray-200" data-aos="fade-left">تابعونا عبر</div>
+          <div class="flex items-center gap-4 lg:gap-10">
+            <div class="border-l border-gray-300 pl-4 text-sm lg:text-lg text-gray-200" data-aos="fade-left">
+              تابعونا عبر
+            </div>
             <div dir="ltr" class="flex">
               <a
                 data-aos="zoom-in"
@@ -702,7 +740,7 @@
           </div>
         </div>
         <div class="border-t border-gray-500 flex justify-center mt-10 min-h-40">
-          <ul class="flex gap-4 mt-10 text-sm text-gray-200" data-aos="fade-up">
+          <ul class="flex gap-4 mt-10 text-xs lg:text-sm text-gray-200" data-aos="fade-up">
             <li><a href="#">سياسة الخصوصية</a></li>
             <li><a href="#"> شروط الخدمة</a></li>
             <li><a href="#"> من نحن</a></li>
@@ -714,8 +752,8 @@
       <div class="bg-gray-900">
         <div class="container mx-auto">
           <div class="flex justify-between px-4 lg:px-0 py-4 text-sm text-gray-300">
-            <div class="text-xs lg:text-base">جميع الحقوق محفوظة © NAIO</div>
-            <div class="text-xs lg:text-base">
+            <div class="text-[10px] lg:text-base">جميع الحقوق محفوظة © NAIO</div>
+            <div class="text-[10px] lg:text-base">
               Made With <i class="text-red-500 fa-solid fa-heart"></i> By
               <a href="https://montderakeel.github.io" target="_blank" class="text-blue-300">MontderAkeel</a>
             </div>
