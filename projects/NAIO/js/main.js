@@ -7,6 +7,10 @@
       document.body.classList.add("loaded");
     }, 1000);
   });
+  
+  setTimeout(function () {
+    AOS.init();
+  }, 2000);
 
   // Side Navbar
   const SideNaveBtn = document.getElementById("sideNaveBtn"),
@@ -30,8 +34,6 @@
   SideNave.onclick = function (event) {
     event.stopPropagation();
   };
-
-  AOS.init();
 
   const swiper = new Swiper(".mySwiper", {
     speed: 500,
