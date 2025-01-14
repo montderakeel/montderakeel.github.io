@@ -2,7 +2,7 @@
   "name": "Order Boxes",
   "short_name": "Boxes",
   "description": "An app to order boxes.",
-  "start_url": "/index.html",
+  "start_url": "https://montderakeel.github.io/projects/miswaki/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
