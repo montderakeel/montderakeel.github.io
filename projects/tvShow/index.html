@@ -54,6 +54,13 @@
       justify-content: center;
     }
 
+    @media (max-width: 767px) {
+       .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+      }
+    }
+
     .thumbnail {
       width: 100%;
       cursor: pointer;
